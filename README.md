@@ -9,5 +9,5 @@
 4. http://localhost:9000/api/doc
 
    ```bash
-   docker compose up --build
+   docker compose up -d --build
 
