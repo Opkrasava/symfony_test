@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Если файл или директория существует, отдаем его напрямую
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Иначе перенаправляем на index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
